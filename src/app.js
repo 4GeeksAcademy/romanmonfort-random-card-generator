@@ -24,10 +24,34 @@ function randomnum(array) {
 function randomtipe(array) {
   let palo = Math.floor(Math.random() * array.length);
   let selectedPalo = array[palo];
+
   div1.innerHTML = selectedPalo;
   div3.innerHTML = selectedPalo;
-  div1.classList.add("tipo", "uno");
-  div3.classList.add("tipo", "dos");
+
+  // Eliminar todas las clases existentes
+  div1.className = "tipo uno";
+  div3.className = "tipo dos";
+
+  // Agregar la clase específica del palo
+  switch (selectedPalo) {
+    case "♦":
+      div1.classList.add("diamond");
+      div3.classList.add("diamond");
+      break;
+    case "♥":
+      div1.classList.add("heart");
+      div3.classList.add("heart");
+      break;
+    case "♣":
+      div1.classList.add("club");
+      div3.classList.add("club");
+      break;
+    default:
+      div1.classList.add("spade");
+      div3.classList.add("spade");
+      break;
+  }
+
   card.appendChild(div1);
   card.appendChild(div3);
 }
@@ -39,6 +63,7 @@ window.onload = function() {
 
 let btn = document.createElement("button");
 btn.innerText = "Crear carta";
+btn.classList.add("btn", "btn-primary");
 card.appendChild(btn);
 
 btn.addEventListener("click", function() {

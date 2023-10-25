@@ -39,6 +39,7 @@ body {
   height: 50px;
   padding: 5px;
   padding: 5px 15px 5px 15px;
+  margin-bottom: 5px;
   order: 3;
   flex: 1;
 }
@@ -54,16 +55,20 @@ body {
 
 .spade {
   color: black;
+  font-size: 40px;
 }
 
 .club {
   color: black;
+  font-size: 40px;
 }
 
 .heart {
   color: red;
+  font-size: 40px;
 }
 
 .diamond {
   color: red;
+  font-size: 40px;
 }
