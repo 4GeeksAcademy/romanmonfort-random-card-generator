@@ -1,1 +1,69 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
+
+body {
+  background-color: antiquewhite;
+}
+.mano {
+  text-align: center;
+  height: 400px;
+  background-color: #62936c;
+  display: flex;
+  justify-content: center; /* Centra horizontalmente el contenido */
+  align-items: center;
+}
+
+.carta {
+  text-align: center;
+  background-color: white;
+  width: 200px;
+  height: 360px;
+  border-radius: 3px;
+  border: solid;
+  border-color: burlywood;
+  display: flex;
+  flex-direction: column;
+}
+
+.uno {
+  text-align: left;
+  display: block;
+  height: 50px;
+  padding: 5px 5px 5px 15px;
+  order: 1;
+  flex: 1;
+}
+
+.dos {
+  text-align: right;
+  display: block;
+  height: 50px;
+  padding: 5px;
+  padding: 5px 15px 5px 15px;
+  order: 3;
+  flex: 1;
+}
+
+.numero {
+  height: 260px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  order: 2;
+}
+
+.spade {
+  color: black;
+}
+
+.club {
+  color: black;
+}
+
+.heart {
+  color: red;
+}
+
+.diamond {
+  color: red;
+}
