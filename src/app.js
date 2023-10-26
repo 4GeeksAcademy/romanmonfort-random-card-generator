@@ -6,7 +6,7 @@ import "./assets/img/rigo-baby.jpg";
 import "./assets/img/4geeks.ico";
 
 let arrTipe = ["♦", "♥", "♠", "♣"];
-let arrNum = ["2", "3", "4", "5", "6", "7", "8", "9","10", "J", "Q", "K", "A"];
+let arrNum = ["2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K", "A"];
 
 let div1 = document.createElement("div");
 let div2 = document.createElement("div");
@@ -71,7 +71,7 @@ btn.addEventListener("click", function() {
   randomtipe(arrTipe);
 });
 
-setTimeout(function() {
+setInterval(function() {
   randomnum(arrNum);
   randomtipe(arrTipe);
 }, 10000);
